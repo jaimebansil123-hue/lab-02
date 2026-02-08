@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="src-image/logonako.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Jaime Bansil</title>
+</head>
+
+<body class="bg-white dark:bg-slate-900 transition-colors duration-300">
+    <section>
+        <nav id="navbar"
+            class="fixed top-0 z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 transition-all duration-300 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md text-slate-800 dark:text-white border-b border-gray-200 dark:border-gray-800">
+            <a href="#" class="text-2xl font-bold font-montserrat">
+                Jaime
+            </a>
+            <ul class="hidden md:flex gap-8 font-medium">
+                <li><a href="#Home" class="hover:text-blue-500 transition-colors">Home</a></li>
+                <li><a href="#About" class="hover:text-blue-500 transition-colors">About</a></li>
+                <li><a href="#Projects" class="hover:text-blue-500 transition-colors">Projects</a></li>
+                <li><a href="#Services" class="hover:text-blue-500 transition-colors">Services</a></li>
+                <li><a href="#Contact" class="hover:text-blue-500 transition-colors">Contact</a></li>
+            </ul>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle"
+                    class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-500"></i>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="hidden absolute top-full left-0 w-full bg-white dark:bg-slate-800 border-b border-gray-200 dark:border-gray-700 shadow-lg md:hidden flex flex-col items-center py-6 gap-6 transition-all duration-300 transform origin-top">
+                <a href="#Home" class="hover:text-blue-500 transition-colors font-medium text-lg">Home</a>
+                <a href="#About" class="hover:text-blue-500 transition-colors font-medium text-lg">About</a>
+                <a href="#Projects" class="hover:text-blue-500 transition-colors font-medium text-lg">Projects</a>
+                <a href="#Services" class="hover:text-blue-500 transition-colors font-medium text-lg">Services</a>
+                <a href="#Contact" class="hover:text-blue-500 transition-colors font-medium text-lg">Contact</a>
+            </div>
+        </nav>
+        <main class="pt-28">
+            <!-- Home  nisya ---------------------------->
+
+            <section
+                class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)] max-w-6xl mx-auto"
+                id="Home">
+                <!-- Text Content (Left) -->
+                <div
+                    class="order-2 md:order-1 flex flex-col items-center md:items-start space-y-6 text-center md:text-left">
+                    <span
+                        class="text-indigo-600 dark:text-indigo-400 font-semibold tracking-wider uppercase text-sm">Hello,
+                        I'm</span>
+                    <h1
+                        class="text-4xl sm:text-6xl md:text-5xl lg:text-[60px] font-bold text-slate-900 dark:text-white leading-none font-montserrat transition-all duration-500">
+                        Jaime <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Ortiz</span>
+                    </h1>
+                    <h3 class="text-xl md:text-2xl text-slate-700 dark:text-slate-300 font-medium">
+                        Web Developer and Designer
+                    </h3>
+                    <p
+                        class="text-slate-600 dark:text-slate-400 max-w-lg text-base md:text-lg leading-relaxed animate-pulse">
+                        A passionate web developer with a knack for creating engaging and user-friendly websites using
+                        modern technologies like HTML, CSS, and Tailwind. I also have a strong background in graphic
+                        design,
+                        allowing me to create visually stunning and user-friendly interfaces.
+                    </p>
+
+                    <div class="flex gap-6 pt-2">
+                        <a href="#" target="_blank"
+                            class="text-2xl text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors transform hover:scale-110">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </a>
+                        <a href="#" target="_blank"
+                            class="text-2xl text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors transform hover:scale-110">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="#" target="_blank"
+                            class="text-2xl text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors transform hover:scale-110">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                    </div>
+
+                    <button
+                        class="mt-4 px-10 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-medium shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
+                        Let's Talk <i class="ri-send-plane-fill"></i>
+                    </button>
+                </div>
+
+
+
+                <!-- Image Content (Right) -->
+                <div class="hidden md:flex order-1 md:order-2 justify-center md:justify-end relative">
+                    <div class="relative w-72 h-72 md:w-96 md:h-96">
+                        <!-- Blob Background -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-tr from-indigo-600/20 to-purple-600/20 rounded-full blur-3xl animate-pulse">
+                        </div>
+
+                        <!-- Main Image Placeholder -->
+                        <img src="src-image/MYIMG.jpg" alt="Jaime Bansil"
+                            class="relative z-10 w-full h-full object-cover rounded-full border-4 border-white dark:border-slate-800 shadow-2xl hover:scale-105 transition-transform duration-500">
+
+                        <!-- Floating Elements -->
+                        <div
+                            class="absolute -top-4 -right-4 w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-100 z-20">
+                            <i class="ri-code-s-slash-line text-xl text-indigo-600"></i>
+                        </div>
+                        <div
+                            class="absolute -bottom-4 -left-4 w-12 h-12 bg-white dark:bg-slate-800 rounded-full flex items-center justify-center shadow-lg animate-bounce delay-300 z-20">
+                            <i class="ri-palette-line text-xl text-purple-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="About" class="py-16 md:py-32 px-6 md:px-16 lg:px-24 xl:px-32 max-w-7xl mx-auto ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <!-- Left Side: Image -->
+                    <div class="flex justify-center md:justify-start">
+                        <div class="relative w-64 h-80 md:w-80 md:h-96 group">
+                            <div
+                                class="absolute top-4 left-4 w-full h-full border-4 border-indigo-600 dark:border-indigo-400 rounded-2xl transition-transform duration-300 group-hover:top-2 group-hover:left-2">
+                            </div>
+                            <img src="src-image/MYIMG.jpg" alt="About Jaime"
+                                class="relative z-10 w-full h-full object-cover rounded-2xl shadow-xl grayscale hover:grayscale-0 transition-all duration-500">
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Text & Skills -->
+                    <div class="space-y-8">
+                        <div class="space-y-4 text-center md:text-left">
+                            <h2
+                                class="text-3xl md:text-4xl font-bold font-montserrat text-slate-900 dark:text-white relative inline-block">
+                                About <span class="text-indigo-600 dark:text-indigo-400">Me</span>
+                                <span
+                                    class="absolute -bottom-2 left-0 w-1/2 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full"></span>
+                            </h2>
+                            <p class="text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+                                I'm a dedicated developer with a strong foundation in modern web technologies and
+                                database management. I love building efficient, scalable, and visually appealing
+                                applications.
+                            </p>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="space-y-4">
+                            <h3
+                                class="text-xl font-semibold text-slate-800 dark:text-slate-200 text-center md:text-left">
+                                My Tech Stack</h3>
+                            <div class="grid grid-cols-2 sm:grid-cols-2 gap-4">
+                                <!-- JS -->
+                                <div
+                                    class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-3 hover:border-yellow-400 transition-colors group">
+                                    <i
+                                        class="ri-javascript-fill text-3xl text-yellow-400 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <h4 class="font-bold text-slate-700 dark:text-slate-200">JavaScript</h4>
+                                        <span class="text-xs text-slate-500">Interactvity</span>
+                                    </div>
+                                </div>
+                                <!-- DBMS -->
+                                <div
+                                    class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-3 hover:border-blue-500 transition-colors group">
+                                    <i
+                                        class="ri-database-2-fill text-3xl text-blue-500 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <h4 class="font-bold text-slate-700 dark:text-slate-200">DBMS</h4>
+                                        <span class="text-xs text-slate-500">Data Management</span>
+                                    </div>
+                                </div>
+                                <!-- Tailwind -->
+                                <div
+                                    class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-3 hover:border-cyan-400 transition-colors group">
+                                    <i
+                                        class="ri-tailwind-css-fill text-3xl text-cyan-400 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <h4 class="font-bold text-slate-700 dark:text-slate-200">Tailwind css</h4>
+                                        <span class="text-xs text-slate-500">Styling</span>
+                                    </div>
+                                </div>
+                                <!-- Java -->
+                                <div
+                                    class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex items-center gap-3 hover:border-red-500 transition-colors group">
+                                    <i
+                                        class="ri-java-fill text-3xl text-red-500 group-hover:scale-110 transition-transform"></i>
+                                    <div>
+                                        <h4 class="font-bold text-slate-700 dark:text-slate-200">Java</h4>
+                                        <span class="text-xs text-slate-500">Logic & Backend</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Section -->
+                <section id="Projects" class="pt-16 mt-32">
+                    <div class="max-w-7xl mx-auto">
+
+                        <!-- Header Section -->
+                        <div class="text-center mb-16 relative">
+                            <!-- Left Arrow -->
+                            <button
+                                class="arrow absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+
+                            <h2
+                                class="text-3xl md:text-4xl font-bold font-montserrat text-slate-900 dark:text-white relative inline-block">
+                                About <span class="text-indigo-600 dark:text-indigo-400">Me</span>
+                                <span
+                                    class="absolute -bottom-2 left-0 w-1/2 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full"></span>
+                            </h2>
+                            <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed pt-4">
+                                Experience seamless digital solutions through my code,<br>
+                                where I build high-performance web applications that combine<br>
+                                elegant design with scalable technical architecture.
+                            </p>
+
+                            <!-- Right Arrow -->
+                            <button
+                                class="arrow absolute right-0 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Works Grid -->
+                        <div id="works-container"
+                            class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
+
+                            <!-- Card 1 - Slideshow Card -->
+                            <div
+                                class="work-card card-animate rounded-3xl overflow-hidden shadow-lg relative h-96 opacity-0 flex-shrink-0 w-80 snap-start">
+                                <div class="relative w-full h-full">
+                                    <img src="/src-image/1st-Project.png" alt="" class="slide">
+                                    <img src="/src-image/2nd-Project.png" alt="" class="slide">
+                                    <img src="/src-image/3rd-Project.png" alt="" class="slide">
+                                    <img src="/src-image/4th-Project.png" alt="" class="slide">
+                                </div>
+                                <!-- Text Overlay -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80">
+                                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                                        <h3 class="text-white text-2xl font-bold mb-2">Mountain Majesty</h3>
+                                        <p class="text-gray-200 text-sm mb-4">
+                                            Exploring the peaks and valleys of<br>
+                                            nature's most stunning landscapes.
+                                        </p>
+                                        <div class="flex gap-2">
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Landscape
+                                            </span>
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Nature
+                                            </span>
+                                        </div>
+                                        <!-- Arrow Icon -->
+                                        <div class="absolute bottom-6 right-6">
+                                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 - Ocean Wave -->
+                            <div
+                                class="work-card card-animate rounded-3xl overflow-hidden shadow-lg relative h-96 opacity-0 flex-shrink-0 w-80 snap-start">
+                                <img src="/src-image/2nd-Project.png" alt="Ocean Wave"
+                                    class="w-full h-full object-cover">
+                                <!-- Text Overlay -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80">
+                                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                                        <h3 class="text-white text-2xl font-bold mb-2">Ocean Depths</h3>
+                                        <p class="text-gray-200 text-sm mb-4">
+                                            Diving into the mesmerizing beauty<br>
+                                            of crashing waves and deep waters.
+                                        </p>
+                                        <div class="flex gap-2">
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Seascape
+                                            </span>
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Motion
+                                            </span>
+                                        </div>
+                                        <!-- Arrow Icon -->
+                                        <div class="absolute bottom-6 right-6">
+                                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 - Dancing Dunes (Featured) -->
+                            <div
+                                class="work-card card-animate rounded-3xl overflow-hidden shadow-lg relative h-96 opacity-0 flex-shrink-0 w-80 snap-start">
+                                <img src="/src-image/3rd-Project.png" alt="Desert Dunes"
+                                    class="w-full h-full object-cover">
+                                <!-- Text Overlay -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80">
+                                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                                        <h3 class="text-white text-2xl font-bold mb-2">Dancing Dunes</h3>
+                                        <p class="text-gray-200 text-sm mb-4">
+                                            Capturing the breathtaking beauty of sand<br>
+                                            dunes through artistic lensmanship.
+                                        </p>
+                                        <div class="flex gap-2">
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Photography
+                                            </span>
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Art Direction
+                                            </span>
+                                        </div>
+                                        <!-- Arrow Icon -->
+                                        <div class="absolute bottom-6 right-6">
+                                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 - Ocean Rocks -->
+                            <div
+                                class="work-card card-animate rounded-3xl overflow-hidden shadow-lg relative h-96 opacity-0 flex-shrink-0 w-80 snap-start">
+                                <img src="/src-image/4th-Project.png" alt="Ocean Rocks"
+                                    class="w-full h-full object-cover">
+                                <!-- Text Overlay -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80">
+                                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                                        <h3 class="text-white text-2xl font-bold mb-2">Coastal Wonders</h3>
+                                        <p class="text-gray-200 text-sm mb-4">
+                                            Where the ocean meets rugged rocks<br>
+                                            creating dramatic natural formations.
+                                        </p>
+                                        <div class="flex gap-2">
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Coastal
+                                            </span>
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Adventure
+                                            </span>
+                                        </div>
+                                        <!-- Arrow Icon -->
+                                        <div class="absolute bottom-6 right-6">
+                                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 - Forest Path -->
+                            <div
+                                class="work-card card-animate rounded-3xl overflow-hidden shadow-lg relative h-96 opacity-0 flex-shrink-0 w-80 snap-start">
+                                <img src="/src-image/5th-Project.png" alt="Forest Path"
+                                    class="w-full h-full object-cover">
+                                <!-- Text Overlay -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80">
+                                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                                        <h3 class="text-white text-2xl font-bold mb-2">Woodland Tales</h3>
+                                        <p class="text-gray-200 text-sm mb-4">
+                                            Journey through mystical forests<br>
+                                            and ancient pathways untold.
+                                        </p>
+                                        <div class="flex gap-2">
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Forest
+                                            </span>
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Exploration
+                                            </span>
+                                        </div>
+                                        <!-- Arrow Icon -->
+                                        <div class="absolute bottom-6 right-6">
+                                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 - Aurora Sky -->
+                            <div
+                                class="work-card card-animate rounded-3xl overflow-hidden shadow-lg relative h-96 opacity-0 flex-shrink-0 w-80 snap-start">
+                                <img src="/src-image/6th-Project.png" alt="" class="w-full h-full object-cover">
+                                <!-- Text Overlay -->
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80">
+                                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                                        <h3 class="text-white text-2xl font-bold mb-2">Northern Lights</h3>
+                                        <p class="text-gray-200 text-sm mb-4">
+                                            Capturing the ethereal dance of<br>
+                                            aurora borealis across night skies.
+                                        </p>
+                                        <div class="flex gap-2">
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Nightscape
+                                            </span>
+                                            <span
+                                                class="bg-white/20 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+                                                Celestial
+                                            </span>
+                                        </div>
+                                        <!-- Arrow Icon -->
+                                        <div class="absolute bottom-6 right-6">
+                                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Navigation Dots (Optional) -->
+                        <div class="flex justify-center gap-2 mt-12">
+                            <button class="w-2 h-2 rounded-full bg-gray-800"></button>
+                            <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                            <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- Services Section -->
+                <section id="Services"></section>
+
+                <!-- Contact Section -->
+                <section id="Contact" class="pt-40">
+                    <h1 class="text-4xl font-bold text-center mb-12 text-slate-900 dark:text-white">Contact Me</h1>
+                    <div class="container mx-auto max-w-6xl">
+                        <div class="grid lg:grid-cols-5 gap-8 items-start">
+
+                            <!-- Left Column - Contact Form -->
+                            <div class="lg:col-span-2 bg-slate-800 rounded-2xl p-8">
+                                <h1 class="text-3xl md:text-4xl font-bold text-white mb-3">
+                                    Let's talk about your project
+                                </h1>
+                                <p class="text-gray-400 mb-6">
+                                    We help companies and individuals build out their brand guidelines.
+                                </p>
+
+                                <form id="contactForm" class="space-y-5">
+                                    <!-- First Name and Last Name Row -->
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-white text-sm font-medium mb-2">First name</label>
+                                            <input type="text" name="firstName" required
+                                                class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-white text-sm font-medium mb-2">Last name</label>
+                                            <input type="text" name="lastName" required
+                                                class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition">
+                                        </div>
+                                    </div>
+
+                                    <!-- Budget and Website Row -->
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-white text-sm font-medium mb-2">Budget</label>
+                                            <input type="text" name="budget"
+                                                class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-white text-sm font-medium mb-2">Website</label>
+                                            <input type="url" name="website"
+                                                class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition">
+                                        </div>
+                                    </div>
+
+                                    <!-- Message -->
+                                    <div>
+                                        <label class="block text-white text-sm font-medium mb-2">Message</label>
+                                        <textarea name="message" required rows="4"
+                                            class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2.5 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 transition resize-none"></textarea>
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="submit"
+                                        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-lg transition duration-300">
+                                        Let's talk
+                                    </button>
+
+                                    <!-- Privacy Policy -->
+                                    <p class="text-gray-500 text-sm">
+                                        By submitting this form, I agree to the <a href="#"
+                                            class="text-indigo-400 hover:text-indigo-300">privacy policy</a>.
+                                    </p>
+                                </form>
+
+                                <!-- Status Message -->
+                                <div id="statusMessage" class="mt-4 hidden">
+                                    <p class="text-sm"></p>
+                                </div>
+                            </div>
+
+                            <!-- Right Column - Testimonials -->
+                            <div class="lg:col-span-3 space-y-6">
+                                <h2 class="text-4xl font-bold text-slate-900 dark:text-white mb-6 text-center">
+                                    Testimonials</h2>
+                                <!-- Testimonial 1 -->
+                                <div class="bg-slate-800 rounded-2xl p-8">
+                                    <div class="flex items-center gap-3 mb-5">
+                                        <svg class="w-8 h-8 text-indigo-500" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z" />
+                                        </svg>
+                                        <span class="text-indigo-400 text-xl font-semibold">Workcation</span>
+                                    </div>
+
+                                    <blockquote class="text-white text-base mb-5 leading-relaxed">
+                                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas
+                                        culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et
+                                        corporis."
+                                    </blockquote>
+
+                                    <div class="flex items-center gap-4">
+                                        <img src="/src-image/Profile.jpg" alt="iskibidihey"
+                                            class="w-12 h-12 rounded-full object-cover">
+                                        <div>
+                                            <p class="text-white font-semibold">iskibidihey</p>
+                                            <p class="text-gray-400 text-sm">CEO </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 2 -->
+                                <div class="bg-slate-800 rounded-2xl p-8">
+                                    <div class="flex items-center gap-3 mb-5">
+                                        <svg class="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
+                                        </svg>
+                                        <span class="text-purple-400 text-xl font-semibold">TechFlow</span>
+                                    </div>
+
+                                    <blockquote class="text-white text-base mb-5 leading-relaxed">
+                                        "Outstanding service and attention to detail. The team went above and beyond to
+                                        deliver exactly what we needed. Our brand has never looked better!"
+                                    </blockquote>
+
+                                    <div class="flex items-center gap-4">
+                                        <img src="/src-image/Profile.jpg" alt="Jaime Bansil"
+                                            class="w-12 h-12 rounded-full object-cover">
+                                        <div>
+                                            <p class="text-white font-semibold">Jaime Bansil</p>
+                                            <p class="text-gray-400 text-sm">Founder of JMBNCL</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+        </main>
+
+</body>
+
+</html>
